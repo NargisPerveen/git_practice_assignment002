@@ -1,14 +1,25 @@
-function prime(num){
-let factor=0;
-for(let i=0;i<=num;i++){
-if(num%i==0){
-factor++;
+function prime(num)
+{
+    var factor=0;
+    for(var i=1;i<=num;i++)
+    {
+        if(num%i==0)
+        {
+            factor++;
+        }
+    }
+    if(factor==2)
+    {
+        return true;
+    }
+    return false;
 }
-if(factor==2){
-console.log("prime number");
-}
-else{
-console.log("not prime number");
-}
-}
-prime(15);
+    var ans=prime(15);
+    if(ans==true)
+    {
+        console.log("Prime");
+    }
+    else
+    {
+        console.log("Not Prime");
+    }
