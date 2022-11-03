@@ -1,3 +1,4 @@
+
 function prime(num)
 {
     var factor=0;
@@ -23,3 +24,5 @@ function prime(num)
     {
         console.log("Not Prime");
     }
+
+
